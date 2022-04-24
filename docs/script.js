@@ -40,12 +40,7 @@ var tasks_array = [];
     var intervalo = setInterval(actualizarHora,1000); 
 }())
     
-    
-       
-
-
-
-changeImage();
+setInterval(changeImage,1800000);
 function changeImage(){  
     const img = [
         "'Imagenes/background-1.jpg'",
@@ -59,7 +54,7 @@ function changeImage(){
     const picked = "url("+img[Math.floor(Math.random()*img.length)]+")";
     //window.alert(picked);
     document.body.style.backgroundImage = picked;
-    setInterval(changeImage,1800000);
+    
 }
 
 eventListeners();
