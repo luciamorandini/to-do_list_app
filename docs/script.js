@@ -17,16 +17,9 @@ var tasks_array = [];
 
     var semana = ["Domingo","Lunes", "Martes","Miercoles","Jueves","Viernes","Sabado"];
 
-    if(hora >= 12){
-        hora = hora - 12;
-        am_pm = 'PM';
-    }else{
-        am_pm = 'AM';
-    }
-
-    if (hora == 12){
-        hora == 0;
-    }
+    am_pm = (hora >= 12)? 'PM' : 'AM';
+    hora = (hora > 12) ? (hora % 12) : hora;
+        
     if(hora < 10) { hora = "0"+hora};
     if(minutos < 10) { minutos = "0"+minutos};
    
