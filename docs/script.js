@@ -33,7 +33,7 @@ var tasks_array = [];
     var intervalo = setInterval(actualizarHora,1000); 
 }())
     
-setInterval(changeImage,1800000);
+setInterval(changeImage,600000);
 function changeImage(){  
     const img = [
         "'Imagenes/background-1.jpg'",
