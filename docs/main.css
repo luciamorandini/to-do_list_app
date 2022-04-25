@@ -245,6 +245,7 @@ body{
     border: none;
     cursor: pointer;
     outline: none;
+    margin-bottom: 20px;
 }
 
 #ventana-terminar {
