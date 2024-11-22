@@ -262,18 +262,17 @@ body{
     padding: 0;
     border-radius: 10px;
     box-shadow: 0 0 40px rgba(0,0,0,0.1), 0 0 10px rgba(0,0,0,0.25);
-    overflow-y: auto;
-    overflow-x: auto;
 }
 
 #ventana-terminar[open] {
     animation: appear 1s cubic-bezier(0, 1.8, 1, 1.8);
-    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 40px 20px;
     overflow: hidden;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
 #ventana-terminar::backdrop{ 
